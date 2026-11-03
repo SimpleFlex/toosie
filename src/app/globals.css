@@ -1121,3 +1121,21 @@ h1 {
 .rc div {
   flex-wrap: wrap;
 }
+
+/* small gap between the headline words */
+.mk {
+  margin-right: 0.06em;
+}
+.mk:last-child {
+  margin-right: 0;
+}
+
+/* slightly smaller headline */
+h1 {
+  font-size: clamp(48px, 8vw, 112px);
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: clamp(40px, 12.5vw, 60px);
+  }
+}

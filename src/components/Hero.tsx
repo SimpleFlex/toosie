@@ -16,10 +16,11 @@ export default function Hero() {
     <div className="w hero">
       <div>
         <motion.div className="open" {...fade(0)}>
-          <span className="dot" />Open for growth and BD mandates
+          <span className="dot" />
+          Open for growth and BD mandates
         </motion.div>
         <h1>
-          {["Hi,", "I’m", "Toosie."].map((word, i) => (
+          {["Hi,", "I’m", "", "", "Toosie."].map((word, i) => (
             <span key={word} className="mk">
               <motion.span
                 initial={{ y: "105%" }}
@@ -32,13 +33,17 @@ export default function Hero() {
           ))}
         </h1>
         <motion.p {...fade(0.45)}>
-          I grow Web3 communities, write the content that explains products, and open the doors that
-          turn attention into partners. BSc Marketing, three years in the trenches, and receipts for
-          all of it.
+          I grow Web3 communities, write the content that explains products, and
+          open the doors that turn attention into partners. BSc Marketing, three
+          years in the trenches, and receipts for all of it.
         </motion.p>
         <motion.div {...fade(0.6)}>
-          <a className="btn" href="#brief">Send me your brief</a>
-          <a className="btn g" href="#reel">Watch the reel</a>
+          <a className="btn" href="#brief">
+            Send me your brief
+          </a>
+          <a className="btn g" href="#reel">
+            Watch the reel
+          </a>
         </motion.div>
       </div>
 
@@ -49,7 +54,13 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease }}
         >
-          <Image src="/img/toosie.jpg" alt="Toosie, Web3 growth marketer" fill priority sizes="(max-width: 700px) 92px, 380px" />
+          <Image
+            src="/img/toosie.jpg"
+            alt="Toosie, Web3 growth marketer"
+            fill
+            priority
+            sizes="(max-width: 700px) 92px, 380px"
+          />
         </motion.figure>
         <div className="rc" aria-label="Results receipt">
           <h4>Toosie growth receipt</h4>
@@ -60,7 +71,8 @@ export default function Hero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4, delay: 0.8 + i * 0.4 }}
             >
-              <span>{label}</span><b>{value}</b>
+              <span>{label}</span>
+              <b>{value}</b>
             </motion.div>
           ))}
         </div>
