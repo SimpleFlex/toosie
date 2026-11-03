@@ -177,7 +177,7 @@ nav .w {
   }
 }
 .hero {
-  padding: 70px 0 60px;
+  padding-block: 70px 60px;
   display: grid;
   grid-template-columns: 1.25fr 0.75fr;
   gap: 50px;
@@ -781,7 +781,7 @@ footer {
     height: 15px;
   }
   .hero {
-    padding: 34px 0 44px;
+    padding-block: 34px 44px;
     gap: 38px;
   }
   h1 {
@@ -1111,4 +1111,13 @@ footer {
 }
 .s0 {
   padding-top: 0;
+}
+.hero > * {
+  min-width: 0;
+}
+h1 {
+  overflow-wrap: break-word;
+}
+.rc div {
+  flex-wrap: wrap;
 }
